@@ -51,7 +51,7 @@ div.pimg {
 } */
 
 div.pimg2 {
-    background: url("../images/img_2.jpg");
+    background: url("../images/img_4.jpeg");
     min-height: 400px;
 }
 
@@ -61,6 +61,18 @@ div.pimg3 {
 }
 
 /* This is the for the caption that appears on the images */
+
+.maincaption {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    font-size: 1.6rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 .caption {
     position: absolute;
@@ -80,50 +92,56 @@ div.pimg3 {
     padding: 1rem;
 }
 
-.flex {
+/* .flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+    justify-content: space-between;
+    align-items: flex-start;
+} */
 
 nav {
-    top: 0;
-    left: 0;
-    position: fixed;
+    top: 33%;
+    left: 5%;
+    position: absolute;
+    overflow: hidden;
     height: 50px;
     width: 100%;
-    background:rgba(11, 11, 51, 0.5); 
-    border-bottom: 1px solid rgba(255,255,255,0.7);
+    background:rgba(11, 11, 51, 0.0); 
+    /* border-bottom: 1px solid rgba(255,255,255,0.7); */
 }
 
 nav a {
     text-decoration: none;
     color: rgb(255,255,255);
+    padding-right: 5rem;
 }
 
 /* This is for sections in between images */
 
 .section {
-    text-align: center;
     padding: 50px 80px;
     letter-spacing: 0.05rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 3rem;
 }
 
 .section-dark {
-    background-color: aliceblue;
-    color: rgb(23, 23, 49); 
+    background-color: rgb(13, 13, 39); 
+    color: rgb(240, 248, 255); 
 }
 
-/* .section-light {
+.section-light {
     background-color: aliceblue;
-    color:  rgb(13, 13, 49);
-} */
+    color:  rgb(23, 23, 49); 
+}
 
-/* body > section > img {
-    height: 45vh;
-    width: 45vh;
-} */
+ body > section > img {
+    height: 50vh;
+    width: 50vh;
+} 
 
 /* This is just for the My Work section using flex display*/
 
@@ -193,7 +211,7 @@ nav a {
 .fa {
     padding: 15px;
     font-size: 20px;
-    width: 20px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     margin: 5px 4px;
@@ -201,7 +219,8 @@ nav a {
   }
   
   .fa:hover {
-      opacity: 0.7;
+      text-decoration: none;
+      color: yellow;
   }
   
   .fa-facebook {
@@ -216,7 +235,7 @@ nav a {
   
   .fa-envelope {
     background: rgb(41, 58, 94);
-    color: rgb(162, 224, 62);
+    color: white;
   }
   
   .fa-linkedin {
