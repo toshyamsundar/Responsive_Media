@@ -14,11 +14,14 @@ body, html {
     color: rgba(151, 146, 146, 0.753);
 }
 
+/* .container{
+    width:100%;
+} */
 /* Image styling for Parallax scroll */
 
-body > div.pimg1,
-body > div.pimg2,
-body > div.pimg3 {
+body > .container > div.pimg1,
+body > .container > div.pimg2,
+body > .container > div.pimg3 {
     position: relative;
 
     background-position: center;
@@ -29,10 +32,10 @@ body > div.pimg3 {
 
 /* This is just for the portfolio image to not center position it*/
 
-body > div.pimg {
+body > .container > div.pimg {
     position: relative;
 
-    background-position: bottom center;
+    background-position: top center;
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -92,28 +95,29 @@ div.pimg3 {
     padding: 1rem;
 }
 
-/* .flex {
+.flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-} */
+}
 
 nav {
-    top: 33%;
-    left: 5%;
-    position: absolute;
-    overflow: hidden;
+    top: 0;
+    left: 0;
+    position:-webkit-sticky;
+    position: sticky;
     height: 50px;
     width: 100%;
-    background:rgba(11, 11, 51, 0.0); 
-    /* border-bottom: 1px solid rgba(255,255,255,0.7); */
+    background:white;
+    padding-top: 1rem; 
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    z-index: 1;
 }
 
 nav a {
     text-decoration: none;
-    color: rgb(255,255,255);
-    padding-right: 5rem;
+    color: red;
 }
 
 /* This is for sections in between images */
@@ -126,6 +130,7 @@ nav a {
     justify-content: space-around;
     align-items: center;
     line-height: 3rem;
+    z-index: 0;
 }
 
 .section-dark {
@@ -138,7 +143,7 @@ nav a {
     color:  rgb(23, 23, 49); 
 }
 
- body > section > img {
+ body > .container > section > img {
     height: 50vh;
     width: 50vh;
 } 
