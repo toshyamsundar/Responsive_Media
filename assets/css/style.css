@@ -70,7 +70,8 @@ div.pimg3 {
     top: 40%;
     left: 10%;
     text-align: center;
-    color: rgba(255,255,255,0.8);
+    /* color: rgba(255,255,255,0.8); */
+    color: rgb(4, 194, 201);
     font-size: 1.6rem;
     letter-spacing: .3rem;
     text-transform: uppercase;
@@ -84,14 +85,14 @@ div.pimg3 {
     text-align: center;
     color: rgba(255,255,255,0.7);
     font-size: 1.6rem;
-    letter-spacing: .3rem;
+    letter-spacing: .2rem;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .caption .border {
     background-color: rgba(11, 11, 51, 0.5); 
-    color: rgb(255,255,255);
+    color: rgb(4, 194, 201);
     padding: 1rem;
 }
 
@@ -153,10 +154,10 @@ nav a {
     display: grid;
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
     height: 100vh;
     background-color: rgb(13, 13, 39);
-    padding: 20px;
+    padding: 10px;
 }
 
 .portfolio-item {
@@ -164,6 +165,8 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10%;
+    border: 2px solid rgb(4, 194, 201);
 }
 
 .small {
@@ -259,12 +262,46 @@ nav a {
 
   /* When viewed on a phone the images will scroll with the page */
 
-  @media (width: 560px) {
-    body > div.pimg,
-    body > div.pimg1,
-    body > div.pimg2,
-    body > div.pimg3 {
-        background-attachment: scroll;
+  @media (max-width: 768px) {
+    #nbar {
+        display: none;
     }
+
+    .section {
+        padding: 50px 80px;
+        letter-spacing: 0.05rem;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1rem;
+    }
+
+    body > .container > div.pimg1,
+    body > .container > div.pimg2,
+    body > .container > div.pimg3 {
+        background-attachment: scroll;
+        min-height: 150px;
+    }
+
+    .caption {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: rgba(255,255,255,0.7);
+        font-size: 1rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .caption .border {
+        background-color: rgba(11, 11, 51, 0.5); 
+        color: rgb(4, 194, 201);
+        padding: .5rem;
+    }
+
 }
   
