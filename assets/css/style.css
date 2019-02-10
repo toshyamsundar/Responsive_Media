@@ -1,17 +1,17 @@
-
 /* This section is to default the styling 
 for the entire page */
 
-body, html {
-    height: 100%;
-    margin: 0;
+body,
+html {
+  height: 100%;
+  margin: 0;
 
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.8rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
 
-    color: rgba(151, 146, 146, 0.753);
+  color: rgba(151, 146, 146, 0.753);
 }
 
 /* .container{
@@ -22,286 +22,289 @@ body, html {
 body > .container > div.pimg1,
 body > .container > div.pimg2,
 body > .container > div.pimg3 {
-    position: relative;
+  position: relative;
 
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* This is just for the portfolio image to not center position it*/
 
 body > .container > div.pimg {
-    position: relative;
+  position: relative;
 
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Background Images */
 
 div.pimg {
-    background: url("../images/air_balloon.jpg");
-    min-height: 100vh;
+  background: url("../images/air_balloon.jpg");
+  min-height: 100vh;
 }
 
-/* div.pimg1 {
-    background: url("../images/img_1.jpg");
-    min-height: 400px;
-} */
+div.pimg1 {
+  background: url("../images/whitewall.jpeg");
+  min-height: 400px;
+  display: none;
+}
 
 div.pimg2 {
-    background: url("../images/whitewall.jpeg");
-    min-height: 400px;
+  background: url("../images/whitewall.jpeg");
+  min-height: 400px;
 }
 
 div.pimg3 {
-    background: url("../images/whitewall.jpeg");
-    min-height: 300px;
+  background: url("../images/whitewall.jpeg");
+  min-height: 300px;
 }
 
 /* This is the for the caption that appears on the images */
 
 .maincaption {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    text-align: center;
-    /* color: rgba(255,255,255,0.8); */
-    color: rgb(4, 194, 201);
-    font-size: 1.6rem;
-    letter-spacing: .3rem;
-    text-transform: uppercase;
-    font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  text-align: center;
+  /* color: rgba(255,255,255,0.8); */
+  color: rgb(4, 194, 201);
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .caption {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: rgba(255,255,255,0.7);
-    font-size: 1.6rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-    font-weight: bold;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .caption .border {
-    background-color: rgba(11, 11, 51, 0.5); 
-    color: rgb(4, 194, 201);
-    padding: 1rem;
+  background-color: rgba(11, 11, 51, 0.5);
+  color: rgb(4, 194, 201);
+  padding: 1rem;
 }
 
 .flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 nav {
-    top: 0;
-    left: 0;
-    position: sticky;
-    height: 50px;
-    width: 100%;
-    background:rgb(240, 248, 255); 
-    padding-top: 1rem; 
-    border-bottom: 3px solid rgb(4, 194, 201);
-    z-index: 1;
+  top: 0;
+  left: 0;
+  position: sticky;
+  height: 50px;
+  width: 100%;
+  background: rgb(240, 248, 255);
+  padding-top: 1rem;
+  border-bottom: 3px solid rgb(4, 194, 201);
+  z-index: 1;
 }
 
 nav a {
-    text-decoration: none;
-    color: rgb(199, 23, 23);
+  text-decoration: none;
+  color: rgb(160, 21, 21);
 }
 
 /* This is for sections in between images */
 
 .section {
-    padding: 50px 80px;
-    letter-spacing: 0.05rem;
+  padding: 50px 80px;
+  letter-spacing: 0.05rem;
+  font-size: 1.2vw;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    line-height: 3rem;
-    z-index: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 5vh;
+  z-index: 0;
 }
 
 .section-dark {
-    background-color: rgb(13, 13, 39); 
-    color: rgb(240, 248, 255); 
+  background-color: rgb(13, 13, 39);
+  color: rgba(151, 146, 146, 0.753);
 }
 
 .section-light {
-    background-color: rgb(240, 248, 255); 
-    color:  rgb(23, 23, 49); 
+  background-color: rgb(240, 248, 255);
+  color: rgb(23, 23, 49);
 }
 
- body > .container > section > img {
-    height: 50vh;
-    width: 50vh;
-} 
+body > .container > section > img {
+  height: 50vh;
+  width: 50vh;
+}
 
 /* This is for the portfolio section using CSS grid*/
 
 .portfolio {
-    display: grid;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 10px;
-    height: 100vh;
-    background-color: rgb(13, 13, 39);
-    padding: 10px;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  height: 100vh;
+  background-color: rgb(13, 13, 39);
+  padding: 10px;
 }
 
 .portfolio-item {
-    background-color: rgb(240, 248, 255); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10%;
-    border: 2px solid rgb(4, 194, 201);
+  background-color: rgb(240, 248, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  border: 1px solid rgb(4, 194, 201);
 }
 
 .small {
-    grid-row: span 2;
-    grid-column: span 2;
+  grid-row: span 2;
+  grid-column: span 2;
 }
 
 .medium {
-    grid-row: span 3;
-    grid-column: span 3;
+  grid-row: span 3;
+  grid-column: span 3;
 }
 
 .medium2 {
-    grid-row: span 4;
-    grid-column: span 3;
+  grid-row: span 4;
+  grid-column: span 3;
 }
 
 .large {
-    grid-row: span 4;
-    grid-column: span 4;
+  grid-row: span 4;
+  grid-column: span 4;
 }
 
 .tall {
-    grid-row: span 6;
-    grid-column: span 2;
+  grid-row: span 6;
+  grid-column: span 2;
 }
 
 .wide {
-    grid-row: span 2;
-    grid-column: span 4;
+  grid-row: span 2;
+  grid-column: span 4;
 }
 
 .narrow {
-    grid-row: span 4;
-    grid-column: span 1;
+  grid-row: span 4;
+  grid-column: span 1;
 }
 
 .narrow-wide {
-    grid-row: span 1;
-    grid-column: span 3;
+  grid-row: span 1;
+  grid-column: span 3;
 }
 
 .fit {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* This is for the Contact Me section using flex to position icons */
 
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding-top: 10rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Font Awesome Icons for Contact me section */
 
 .fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 5px;
-    /* border-radius: 50%; */
-  }
-  
-  .fa:hover {
-      text-decoration: none;
-      color: yellow;
-  }
-  
-  .fa-facebook {
-    background: rgb(58, 86, 148);
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: rgb(85, 169, 233);
-    color: white;
-  }
-  
-  .fa-envelope {
-    background: rgb(41, 58, 94);
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #067db4;
-    color: white;
-  }
-
-  /* When viewed on a phone the images will scroll with the page */
-
-  @media (max-width: 768px) {
-    #nbar {
-        display: none;
-    }
-
-    .section {
-        padding: 50px 80px;
-        letter-spacing: 0.05rem;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 1rem;
-    }
-
-    body > .container > div.pimg1,
-    body > .container > div.pimg2,
-    body > .container > div.pimg3 {
-        background-attachment: scroll;
-        min-height: 150px;
-    }
-
-    .caption {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        text-align: center;
-        color: rgba(255,255,255,0.7);
-        font-size: 1rem;
-        letter-spacing: .2rem;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    
-    .caption .border {
-        background-color: rgba(11, 11, 51, 0.5); 
-        color: rgb(4, 194, 201);
-        padding: .5rem;
-    }
-
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
 }
-  
+
+.fa:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.fa-facebook {
+  background: rgb(58, 86, 148);
+  color: white;
+}
+
+.fa-twitter {
+  background: rgb(85, 169, 233);
+  color: white;
+}
+
+.fa-envelope {
+  background: rgb(41, 58, 94);
+  color: white;
+}
+
+.fa-linkedin {
+  background: #067db4;
+  color: white;
+}
+
+/* When viewed on a phone the images will scroll with the page */
+
+@media (max-width: 768px) {
+  #nbar {
+    display: none;
+  }
+
+  body > .container > div.pimg1 {
+    display: block;
+  }
+
+  .section {
+    padding: 30px 50px;
+    letter-spacing: 0.05rem;
+    font-size: 2vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 3vh; */
+  }
+
+  body > .container > div.pimg1,
+  body > .container > div.pimg2,
+  body > .container > div.pimg3 {
+    background-attachment: scroll;
+    min-height: 150px;
+  }
+
+  .caption {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .caption .border {
+    background-color: rgba(11, 11, 51, 0.5);
+    color: rgb(4, 194, 201);
+    padding: 0.5rem;
+  }
+}
