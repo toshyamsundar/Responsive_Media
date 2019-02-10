@@ -14,9 +14,6 @@ html {
   color: rgba(151, 146, 146, 0.753);
 }
 
-/* .container{
-    width:100%;
-} */
 /* Image styling for Parallax scroll */
 
 body > .container > div.pimg1,
@@ -39,6 +36,11 @@ body > .container > div.pimg {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Background Images */
@@ -67,13 +69,8 @@ div.pimg3 {
 /* This is the for the caption that appears on the images */
 
 .maincaption {
-  position: absolute;
-  top: 40%;
-  left: 10%;
-  text-align: center;
-  /* color: rgba(255,255,255,0.8); */
   color: rgb(4, 194, 201);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -154,10 +151,11 @@ body > .container > section > img {
 
 .portfolio {
   display: grid;
-  grid-template-rows: repeat(8, 1fr);
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  align-items: center;
+  justify-items: center;
   grid-gap: 10px;
-  height: 100vh;
+  height: 100%;
   background-color: rgb(13, 13, 39);
   padding: 10px;
 }
@@ -167,48 +165,13 @@ body > .container > section > img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5%;
   border: 1px solid rgb(4, 194, 201);
+  width: 100%;
+  font-size: 2vw;
 }
 
-.small {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-
-.medium {
-  grid-row: span 3;
-  grid-column: span 3;
-}
-
-.medium2 {
-  grid-row: span 4;
-  grid-column: span 3;
-}
-
-.large {
-  grid-row: span 4;
-  grid-column: span 4;
-}
-
-.tall {
-  grid-row: span 6;
-  grid-column: span 2;
-}
-
-.wide {
-  grid-row: span 2;
-  grid-column: span 4;
-}
-
-.narrow {
-  grid-row: span 4;
-  grid-column: span 1;
-}
-
-.narrow-wide {
-  grid-row: span 1;
-  grid-column: span 3;
+.portfolio-item > img {
+  width: 100%;
 }
 
 .fit {
