@@ -3,7 +3,7 @@
 Responsive portfolio using media query
 
 ├── assets  
-| ├── css  
-| | └── style.css  
-| ├── images  
+|├── css  
+||└── style.css  
+|├── images  
 └── index.html
